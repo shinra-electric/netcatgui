@@ -3,6 +3,7 @@
 # -------------------------------------------------
 QT += core gui widgets network
 TARGET = netcatgui
+DESTDIR = build
 TEMPLATE = app
 SOURCES += src/main.cpp \
     src/netcatgui.cpp \
