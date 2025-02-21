@@ -35,7 +35,7 @@ Building the sources requires Qt 4.7.0 or later.
 - Install [Homebrew](https://brew.sh) 
 - Install Qt with `brew install qt`
 - Clone this repo and cd into it
-- Use the command `qmake netcatqui.pro && make`
+- Use the command `qmake netcatgui.pro && make`
 - If it compiles successfully you should see the NatcatGUI app bundle in the same directory
 
 ## Compiling on Unix/Linux and Windows
