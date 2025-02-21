@@ -1,5 +1,10 @@
-About NetcatGUI
-===============
+> [!Note]
+> This fork of NetcatGUI is intended for macOS<br>
+> There are no Linux/Windows changes, so it should still work for those platforms<br>
+> The following readme is from the original project except for the macOS instructions<br>
+
+
+# About NetcatGUI
 
 NetcatGUI is a simple gui program that is set to emulate the popular
 network "swiss army knife" tool called netcat(nc) using an easy to use
@@ -14,23 +19,30 @@ NetcatGUI is written in Qt, thus it supports Linux, Mac OS X, BSD and
 Windows out of the box.
 
 
-Supported Platforms
--------------------
+## Supported Platforms
 
 The binary packages support the following platforms:
 
-*Windows
-*Linux
-*Mac OS X (i don't have a Mac yet, thus i can't make an official build)
+- Windows
+- Linux
+- macOS (I don't have a Mac yet, thus I can't make an official build)
 
 Building the sources requires Qt 4.7.0 or later.
 
-Compiling on Unix/Linux and Windows
------------------------------------
+## Compiling on macOS
+
+- Install the Xcode Command-line Tools with `xcode-select --install`
+- Install [Homebrew](https://brew.sh) 
+- Install Qt with `brew install qt`
+- Clone this repo and cd into it
+- Use the command `qmake netcatqui.pro && make`
+- If it compiles successfully you should see the NatcatGUI app bundle in the same directory
+
+## Compiling on Unix/Linux and Windows
 
 Prerequisites:
-   * Qt 4.7.0 or later
-   * On Linux you have two choices for installing the Qt SDK:
+   - Qt 4.7.0 or later
+   - On Linux you have two choices for installing the Qt SDK:
         1. Install Qt 4.7.0 or later using your distribution's
             package manager. The minimum libraries you need are
             libqt4-core, libqt4-gui and libqt4-dev. Besides that
@@ -43,7 +55,7 @@ Prerequisites:
             you need.
         2. Install the latest official Qt SDK available at:
             http://qt.nokia.com/downloads/
-   * On Windows:
+   - On Windows:
      -  MinGW 4.4 or later, Visual Studio 2008 or later
      -  jom
      The Qt SDK provides you with most of the required software.
@@ -62,14 +74,12 @@ make install //not implemented
 To clean the build directory:
 make clean && make distclean
 
-Documentation
--------------
+# Documentation
 
-* this file
-* the home page: http://shinnok.com/projects.php
+- this file
+- the home page: http://shinnok.com/projects.php
 
-Usage
------
+## Usage
 
 Nothing special, just run the program and browse around. There's nothing you 
 can break or something like that. :-)
@@ -88,13 +98,12 @@ I'll list a couple of useful keyboard shortcuts you can use with NetcatGUI(you c
               and a connection is made or stop listening respectively
     -Enter/Return : send message
 
-Reporting bugs
----------------
+## Reporting bugs
 
 Report bugs using Github issues or send directly to admin<at>shinnok<dot>com.
 
-Third-party components
-----------------------
+## Third-party components
+
 
 NetcatGUI uses icons from the iconpack Silk icon set 1.3 by Mark James.
 http://www.famfamfam.com/lab/icons/silk/
