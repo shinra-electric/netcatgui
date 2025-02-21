@@ -22,7 +22,6 @@ FORMS += src/netcatgui.ui \
 
 OTHER_FILES += \
     resources/icons/listen.png \
-    resources/icons/icons_readme.txt \
     resources/icons/connect.png \
     resources/ncgui.rc \
     resources/icons/save.png
@@ -30,4 +29,5 @@ OTHER_FILES += \
 RESOURCES += \
     resources/resources.qrc
 
+macx:ICON = resources/icons/ncgui.icns
 RC_FILE = resources/ncgui.rc
