@@ -2,7 +2,7 @@
 # Project created by QtCreator 2010-03-11T14:45:34
 # -------------------------------------------------
 QT += core gui widgets network
-TARGET = netcatgui
+TARGET = NetcatGUI
 DESTDIR = build
 TEMPLATE = app
 SOURCES += src/main.cpp \

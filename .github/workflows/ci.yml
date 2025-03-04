@@ -32,7 +32,7 @@ jobs:
         run: make -j$(sysctl -n hw.ncpu)
 
       - name: Sign the app
-        run: codesign --sign - --force --deep build/netcatgui.app
+        run: codesign --sign - --force --deep build/NetcatGUI.app
         
       - name: Generate macOS app dmg
         run: hdiutil create -volname "NetcatGUI" -srcfolder build "NetcatGUI-arm64"
@@ -41,5 +41,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: netcatgui-macOS-arm64
-          path: build/NetcatGUI-arm64.dmg
+          path: NetcatGUI-arm64.dmg
           if-no-files-found: error
