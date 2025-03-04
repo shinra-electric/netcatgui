@@ -29,7 +29,7 @@ jobs:
         run: qmake netcatgui.pro
 
       - name: Build
-        run: make
+        run: make -j$(sysctl -n hw.ncpu)
 
       - name: Sign the app
         run: codesign --sign - --force --deep build/netcatgui.app
