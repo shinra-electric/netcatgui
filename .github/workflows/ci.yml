@@ -33,10 +33,13 @@ jobs:
 
       - name: Sign the app
         run: codesign --sign - --force --deep build/netcatgui.app
+        
+      - name: Generate macOS app dmg
+        run: hdiutil create -volname "NetcatGUI" -srcfolder build "NetcatGUI-arm64"
 
       - name: Upload artifacts - macOS
         uses: actions/upload-artifact@v4
         with:
           name: netcatgui-macOS-arm64
-          path: build/netcatgui.app
+          path: build/NetcatGUI-arm64.dmg
           if-no-files-found: error
